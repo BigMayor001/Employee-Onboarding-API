@@ -56,12 +56,12 @@ The server will boot up and spin up at **`http://localhost:3000`**.
 * **Request Body Example:**
 ```json
 {
-  "employeeName": "John Doe",
-  "department": "Design",
-  "startDate": "2026-11-20",
+  "employeeName": "John Smith",
+  "department": "Marketing",
+  "startDate": "2026-11-160",
   "tasks": [
-    { "taskName": "Collect ID Badge", "isCompleted": false },
-    { "taskName": "Intro to Figma Library", "isCompleted": true }
+    { "taskName": "Collect Employee ID", "isCompleted": false },
+    { "taskName": "Intro to LinkedIn Learning", "isCompleted": true }
   ]
 }
 ```
@@ -111,5 +111,5 @@ You can rapidly test your endpoints using your terminal with this sample command
 ```bash
 curl -X POST http://localhost:3000/api/checklists \
      -H "Content-Type: application/json" \
-     -d '{"employeeName": "Jane Doe", "department": "HR", "startDate": "2026-12-01"}'
+     -d '{"employeeName": "Jane Morgan", "department": "Customer Service", "startDate": "2026-11-16"}'
 ```
